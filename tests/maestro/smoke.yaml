@@ -1,0 +1,16 @@
+appId: com.john.amounttracker
+---
+- launchApp:
+    clearState: true
+- assertVisible: "Your money, clearly."
+- tapOn: "Add credit"
+- tapOn: "₹ 0.00"
+- inputText: "10000"
+- tapOn: "Add credit"
+- assertVisible: "₹10,000"
+- tapOn: "Add expense"
+- tapOn: "₹ 0.00"
+- inputText: "250"
+- tapOn: "Food"
+- tapOn: "Save expense"
+- assertVisible: "₹9,750"
